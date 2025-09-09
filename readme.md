@@ -29,8 +29,10 @@ https://todo-eitgvstlp-duc-1255ms-projects.vercel.app/
 
 > Hãy truy cập liên kết dưới đây để xem ứng dụng hoạt động:  
 > **Live Demo**: https://todo-eitgvstlp-duc-1255ms-projects.vercel.app/
+<p align="left">
+  <a href="https://todo-eitgvstlp-duc-1255ms-projects.vercel.app/">
+    <img src="images/demo.png"width="50%"alt="demo" />
 
-Bạn cũng có thể chèn ảnh screenshot hoặc GIF để trực quan hơn, giúp người đọc nhanh hiểu chức năng chính của app :contentReference[oaicite:0]{index=0}.
 
 ---
 
