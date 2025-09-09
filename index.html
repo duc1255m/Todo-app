@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Todo App — Lưu trạng thái khi reload</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app" aria-label="Todo App">
+    <header>
+      <h1>Todo</h1>
+      <span class="muted" id="count"></span>
+    </header>
+
+    <form class="add" id="form" autocomplete="off" aria-label="Thêm công việc">
+      <input id="input" type="text" placeholder="Nhập việc cần làm và nhấn Enter…" aria-label="Nội dung công việc" />
+      <button id="addBtn" type="submit" disabled>Thêm</button>
+    </form>
+
+    <div class="controls" aria-label="Bộ lọc và thao tác nhanh">
+      <div class="filters" role="tablist" aria-label="Bộ lọc">
+        <button class="chip active" data-filter="all" role="tab" aria-selected="true">Tất cả</button>
+        <button class="chip" data-filter="active" role="tab">Chưa xong</button>
+        <button class="chip" data-filter="completed" role="tab">Đã xong</button>
+      </div>
+      <div class="actions">
+        <button class="btn" id="toggleAll">Đánh dấu tất cả</button>
+        <button class="btn danger" id="clearDone">Xóa việc đã xong</button>
+      </div>
+    </div>
+
+    <ul id="list" aria-live="polite" aria-label="Danh sách công việc"></ul>
+    <div class="empty" id="empty" hidden>Chưa có việc nào. Hãy thêm việc mới!</div>
+
+    <footer>
+      <div>✔️ Tự lưu với <code>localStorage</code> (offline).</div>
+      <div class="muted">Mẹo: nhấn đúp vào công việc để chỉnh sửa nhanh.</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
